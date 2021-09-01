@@ -23,6 +23,10 @@ public class Assignment {
 		driver.findElement(By.cssSelector("[id='confirmbtn']")).click();
 		System.out.println(driver.switchTo().alert().getText()); // grab the text
 		driver.switchTo().alert().dismiss(); // for cancel or non
+		
+		driver.findElement(By.cssSelector("[id='confirmbtn']")).click();
+		System.out.println(driver.switchTo().alert().getText()); // grab the text
+		driver.switchTo().alert().dismiss(); // for cancel or non
 	}
 
 }
